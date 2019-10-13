@@ -18,6 +18,6 @@ class Song < ActiveRecord::Base
       drake.songs << self
       self
     end 
-    
+    binding.pry
   end
 end
