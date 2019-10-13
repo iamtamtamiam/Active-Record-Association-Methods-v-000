@@ -13,7 +13,6 @@ class Song < ActiveRecord::Base
     
     if Artist.find_by(name: "Drake") == "Drake"
       drake.songs.push(name: self)
-      drake
     else 
       drake = Artist.create(name: "Drake")
       drake.songs << self
