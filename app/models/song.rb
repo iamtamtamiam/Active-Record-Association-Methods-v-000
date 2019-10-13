@@ -19,7 +19,7 @@ class Song < ActiveRecord::Base
     #  self
     #end 
     
-    
+    self.artist
     
   end
 
