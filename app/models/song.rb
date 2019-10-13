@@ -16,6 +16,7 @@ class Song < ActiveRecord::Base
     else 
       drake = Artist.new(name: "Drake")
       drake.songs.push(name: self)
+      drake.save
     end 
 
   end
