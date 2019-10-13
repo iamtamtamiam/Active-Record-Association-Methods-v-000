@@ -13,10 +13,11 @@ class Song < ActiveRecord::Base
     
     if Artist.find_by(name: "Drake") == "Drake"
       drake.songs.push(name: self)
+      drake
     else 
       drake = Artist.new(name: "Drake")
       drake.songs.push(name: self)
-      self
+      drake
     end 
 
   end
